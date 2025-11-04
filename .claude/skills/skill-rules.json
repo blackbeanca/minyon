@@ -1,0 +1,52 @@
+{
+  "version": "1.0",
+  "skills": {
+    "frontend-dev-guidelines": {
+      "type": "skill",
+      "prompt_triggers": {
+        "keywords": [
+          "component",
+          "react",
+          "tsx",
+          "typescript",
+          "frontend",
+          "ui",
+          "interface",
+          "styling",
+          "tailwind",
+          "hook",
+          "state",
+          "props"
+        ],
+        "intent_patterns": [
+          "create.*component",
+          "add.*feature",
+          "build.*ui",
+          "implement.*interface",
+          "refactor.*component",
+          "fix.*frontend",
+          "update.*styling",
+          "add.*button|input|form"
+        ]
+      },
+      "file_patterns": {
+        "paths": [
+          "src/components/**/*.tsx",
+          "src/features/**/*.tsx",
+          "src/hooks/**/*.ts",
+          "src/**/*.tsx",
+          "src/**/*.css"
+        ],
+        "content_patterns": [
+          "React\\.FC",
+          "useState",
+          "useEffect",
+          "interface.*Props",
+          "export.*function.*Component"
+        ]
+      },
+      "enforcement": "suggest",
+      "priority": "high"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "command": ".claude/hooks/skill-activation-prompt.sh",
+        "timeout": 5000,
+        "description": "Analyzes user prompts and suggests relevant skills based on context"
+      }
+    ],
+    "PostToolUse": [
+      {
+        "command": ".claude/hooks/post-tool-use-tracker.sh",
+        "timeout": 3000,
+        "description": "Tracks file modifications and suggests build commands"
+      }
+    ]
+  }
+}
